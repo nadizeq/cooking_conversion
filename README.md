@@ -1,10 +1,8 @@
 # cooking_conversion
 
-This is a mobile application that I develop for the training unit. I uses video tutorial on YouTube which inspire me to write the code and credits StackOverflow for helping to solve some of the issues that I have faced.
+This is a mobile application that I develop for the training unit. The functionality of this app is to convert the number(gram) into selected cooking measurement in either teaspoon or tablespoon.
 
-The functionality of this app is to convert the number(gram) into selected cooking measurement in either teaspoon or tablespoon.
-
-The pictures does not belong to me and these are the link to each of the picture that I use:
+The pictures in this app does not belong to me and these are the link to each of the picture that I use:
 
 1.	Measuring Spoon –
  https://www.amazon.com/Measuring-Plastic-Stackable-Ingredients-Cooking/dp/B082FV7ST1
