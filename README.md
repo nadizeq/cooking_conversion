@@ -7,8 +7,7 @@ The pictures in this app does not belong to me and these are the link to each of
 1.	Measuring Spoon –
  https://www.amazon.com/Measuring-Plastic-Stackable-Ingredients-Cooking/dp/B082FV7ST1
 
-2.	butter 
-- https://www.healthline.com/nutrition/foods/butter#fat
+2.	butter - https://www.healthline.com/nutrition/foods/butter#fat
 
 3.	Flour - https://www.thespruceeats.com/all-about-flour-995124
 
