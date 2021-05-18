@@ -21,6 +21,7 @@ class MainPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.deepOrange,
       ),
@@ -72,7 +73,7 @@ class MainPageState extends State<MainPageApp> {
 
     Text text1 = Text(
       'However, if the ingredient is not listed,' +
-          ' select "Estimate Calculation" to have gauge the amount needed',
+          ' select "Estimate Calculation" to gauge the amount needed',
       textAlign: TextAlign.center,
       overflow: TextOverflow.visible,
       style: TextStyle(
@@ -209,6 +210,7 @@ class WaterPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
@@ -222,6 +224,7 @@ class ButterPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.yellow,
       ),
@@ -235,6 +238,7 @@ class SaltPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.cyan,
       ),
@@ -248,6 +252,7 @@ class HoneyPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.orange,
       ),
@@ -261,6 +266,7 @@ class PBPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.amber,
       ),
@@ -274,6 +280,7 @@ class FlourPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(primarySwatch: Colors.teal),
       home: FlourApp(),
     );
@@ -285,6 +292,7 @@ class SugarPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(primarySwatch: Colors.amber),
       home: SugarApp(),
     );
@@ -295,6 +303,7 @@ class EstimateCalcPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(primarySwatch: Colors.amber),
       home: EstimateCalculationApp(),
     );
@@ -305,6 +314,7 @@ class OilPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(primarySwatch: Colors.yellow),
       home: OilPageApp(),
     );
@@ -315,6 +325,7 @@ class MilkPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(primarySwatch: Colors.cyan),
       home: MilkPageApp(),
     );
@@ -325,27 +336,9 @@ class MayoPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(primarySwatch: Colors.amber),
       home: MayoPageApp(),
     );
   }
-}
-
-//Go to MainPage
-Route _gotoMainPage() {
-  return PageRouteBuilder(
-    pageBuilder: (context, animation, secondaryAnimation) => MainPage(),
-    transitionsBuilder: (context, animation, secondaryAnimation, child) {
-      var begin = Offset(0.0, 1.0);
-      var end = Offset.zero;
-      var curve = Curves.ease;
-
-      var tween = Tween(begin: begin, end: end).chain(CurveTween(curve: curve));
-
-      return SlideTransition(
-        position: animation.drive(tween),
-        child: child,
-      );
-    },
-  );
 }
